@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Latihan 2 Perancangan Web</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body bgcolor="#eeeeee">
+<h4 style="margin: 0px;">Update Biodata Pegawai</h4>
+<hr/>
+<form action=" formulir.php" method="post">
+ <table>
+	 <tr>
+	 <td>Nama</td>
+	 <td>:</td>
+	 <td><input type="text" name="nama" value="" placeholder="Tulislah Nama Anda" /></td>
+	 </tr>
+	 <tr>
+	 <td>Password</td>
+	 <td>:</td>
+	 <td> <input type="password" name="password" placeholder="Ketikkan Password Anda" /></td>
+	 </tr>
+	 <tr>
+	 <td>Jenis Kelamin</td>
+	 <td>:</td>
+ <!--Gunakan atribut checked untuk memilih radio-->
+ 		<td>
+			<input type="radio" name="jenis_kelamin" value="laki-laki" checked /> Laki - Laki
+			<input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+		</td>
+	</tr>
+	<tr>
+		 <td>Hobi</td>
+		 <td>:</td>
+		 <td><input type="checkbox" name="hobi_baca"> Membaca Buku
+		 <input type="checkbox" name="hobi_nulis"> Menulis
+		 <input type="checkbox" name="hobi_diskusi"> Berdiskusi<br>
+		 <input type="checkbox" name="hobi_futsal"> Bermain Futsal
+		 <input type="checkbox" name="hobi_lukis"> Melukis
+		 <input type="checkbox" name="hobi_sepeda"> Bersepeda
+		 </td>
+	</tr>
+	 <tr>
+		 <td>Asal Kota</td>
+		 <td>:</td>
+		 <td> <select name="asal_kota">
+		 <option value="Kota Singaraja">Singaraja</option>
+		 <option value="Kota Denpasar">Denpasar</option>
+		 <!--Gunakan atribut selected untuk memilih option-->
+		 <option value="Kota Ubud" selected>Ubud</option>
+	 </select>
+	 </td>
+		 </tr>
+		 <tr>
+	 <td>Komentar</td>
+	 <td>:</td>
+	 <td><textarea name="komentar" rows="5" cols="50"></textarea>
+	 </td>
+		 </tr>
+		 <tr>
+	 <td colspan="3" align="right"><input type="submit" value="Simpan"> </td>
+	 <td colspan="2"align="right"><input type="reset" value="Ulang"> </td>
+	 </tr>
+ </table>
+</form>
+</body>
+</html>
